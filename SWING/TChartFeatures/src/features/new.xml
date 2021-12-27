@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : features.xml
+    Author     : tom
+    Description: TeeChart features demo population tree.
+-->
+
+<features>
+    <all>
+         <group caption="Welcome!">
+                <feature caption="Basic features" classpath="BasicFeatures" />
+                <group caption="New in Axes">
+                        <feature caption="Axes Grid Zones" classpath="axes.AxisGridZonesDemo"/>
+                </group>
+                <group caption="New in Chart tools">
+                        <feature caption="GridBand Centered" classpath="tool.GridBandsCenteredDemo"/>
+                        <feature caption="DrawLine Styles" classpath="tool.drawline.DrawLineStyleDemo"/>
+                </group>
+                <group caption="New in Legend">
+       			<feature caption="Text-Symbol gap" classpath="legend.LegendTextGapDemo"/>
+       		</group>
+	   	<group caption="New in Series">
+       			<feature caption="Marks on Bar" classpath="tool.MarksOnBarDemo"/>
+                        <feature caption="Histogram YOrigin" classpath="style.histogram.HistogramYOriginDemo"/>
+                        <feature caption="Smoothed Lines" classpath="style.line.SmoothedDemo" />
+                        <feature caption="Surface HideCells" classpath="style.surface.HideCellsDemo" />
+	   	</group>
+       		<group caption="New Series">
+                        <group caption="Gauges">
+                                <feature caption="Circular Gauge" classpath="style.circulargauge.CircularGaugeDemo"/>
+                                <feature caption="Embedded NGauge" classpath="style.circulargauge.CircularGauge_nGaugeDemo"/>
+                                <feature caption="Embedded LGauge" classpath="style.circulargauge.CircularGauge_lGaugeDemo"/>
+                                <feature caption="Knob Gauge" classpath="style.circulargauge.KnobGaugeDemo"/>
+                                <feature caption="Linear Gauge" classpath="style.lineargauge.LinearGaugeDemo"/>
+                                <feature caption="Numeric Gauge" classpath="style.numericgauge.NumericGaugeDemo"/>
+                                <feature caption="Vertical Linear Gauge" classpath="style.verticallineargauge.VerticalLinearGaugeDemo"/>
+                       </group>
+                       <feature caption="Ternary" classpath="style.ternary.TernaryDemo"/>
+                       <feature caption="World" classpath="style.world.WorldDemo"/>
+                       <feature caption="ErrorPoint" classpath="style.errorpoint.ErrorPointDemo"/>
+                       <feature caption="ErrorPoint3D" classpath="style.errorpoint3d.ErrorPoint3DDemo"/>
+       		</group>
+                <group caption="New Chart tools">
+                        <feature caption="Axis breaks" classpath="tool.AxisBreakDemo"/>
+                        <feature caption="ScrollPager" classpath="tool.ScrollPagerDemo"/>
+                </group>
+                <group caption="New in Zoom and Scroll">
+       			<feature caption="Zoom History" classpath="zoom.ZoomHistoryDemo"/>
+       		</group>
+                <group caption="Miscellaneous">
+                    <group caption="Series Marks">
+                        <feature caption="Marks on Top" classpath="miscellaneous.MarksOnTop" />
+                    </group>
+                </group>
+       </group>
+    </all>
+</features>

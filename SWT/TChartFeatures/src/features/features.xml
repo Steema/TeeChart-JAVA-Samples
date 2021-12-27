@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : features.xml
+    Author     : tom
+    Description: TeeChart features demo population tree.
+-->
+
+<features>
+    <all>
+        <group caption="Welcome!">
+            <group caption="Themes">
+                <feature caption="Chart Themes" classpath="theme.ThemesDemo" />
+                <feature caption="Chart Palettes" classpath="theme.PalettesDemo" />
+            </group>
+            <group caption="Chart styles">
+                <group caption="Standard">
+                    <group caption="Line (Strip)" classpath="style.line.LineDemo">
+                        <feature caption="Line Outline" classpath="style.line.OutlineDemo" />
+                        <feature caption="Stack and Overlay" classpath="style.line.StackDemo" />
+                        <feature caption="Clickable Line" classpath="style.line.ClickableDemo" />
+                        <feature caption="Image Patterns" classpath="style.line.PatternDemo"/>
+                        <feature caption="Color Each Line" classpath="style.line.ColorEachLineDemo" />
+                        <feature caption="Smoothed Lines" classpath="style.line.SmoothedDemo" />
+                    </group>
+                    <group caption="Bar" classpath="style.bar.BarDemo">
+                        <feature caption="Side All Layout" classpath="style.bar.SideAllDemo" />
+                        <feature caption="Stack Groups" classpath="style.bar.StackGroupDemo" />
+                        <feature caption="Negative Stacked" classpath="style.bar.NegativeStackedDemo" />
+                        <feature caption="Cone Bar style" classpath="style.bar.ConeDemo"/>
+                        <feature caption="Brush Image" classpath="style.bar.ImageDemo"/>
+                        <feature caption="Gradient" classpath="style.bar.GradientDemo"/>
+                       <feature caption="Bar Size example" classpath="style.bar.BarSizeDemo" />
+                        <feature caption="Self Stacked" classpath="style.bar.SelfStackDemo" />
+                    </group>
+                    <group caption="Area" classpath="style.area.AreaDemo">
+                        <feature caption="Area Transparency" classpath="style.area.TransparencyDemo" />
+                        <feature caption="Area Gradient" classpath="style.area.GradientDemo"/>
+                        <feature caption="Y Origin" classpath="style.area.OriginDemo" />
+                        <feature caption="Area Stairs" classpath="style.area.StairsDemo" />
+                    </group>
+                    <group caption="Pie" classpath="style.pie.PieDemo" >
+                        <feature caption="Multiple Pies" classpath="style.pie.MultiDemo"/>
+                        <feature caption="Shadow" classpath="style.pie.ShadowDemo" />
+                        <feature caption="Semi-pie" classpath="style.pie.SemiDemo" />
+                        <feature caption="Auto Mark position" classpath="style.pie.AutoMarkPositionDemo" issues="Drawing mark positions in 3D (Callout calc3DPoint fails)"/>
+                        <feature caption="Other Legend" classpath="style.pie.OtherLegendDemo"/>
+                    </group>
+                    <group caption="Fast Line" classpath="style.fastline.FastLineDemo" issues="0">
+                        <feature caption="Fast Line Speed DrawAll" classpath="style.fastline.DrawAllDemo" />
+                        <feature caption="Fast Delete and Fast Pen" classpath="style.fastline.RealTimeDemo" visible="0" issues="0"/>
+                        <feature caption="Nulls and Stairs" classpath="style.fastline.NullsDemo" />
+                    </group>
+                    <feature caption="Horizontal Line" classpath="style.line.HorizLineDemo" />
+                    <feature caption="Horizontal Area" classpath="style.area.HorizAreaDemo" />
+                    <feature caption="Horizontal Bar" classpath="style.bar.HorizBarDemo"/>
+                    <group caption="Point (Scatter)" classpath="style.pointer.PointDemo" issues="0">
+                        <feature caption="Drawing pointers on custom canvas" classpath="style.pointer.DrawCanvasDemo" visible="0" issues="0"/>
+                        <feature caption="Points Treat Nulls" classpath="style.pointer.PointsTreatNullsDemo"/>
+                    </group>
+                    <group caption="Bubble" classpath="style.bubble.BubbleDemo" >
+                        <feature caption="Bubble Gradient" classpath="style.bubble.GradientDemo"/>
+                        <feature caption="Bubble Transparency" classpath="style.bubble.TransparencyDemo"/>
+                    </group>
+                    <feature caption="Arrows" classpath="style.arrow.ArrowDemo" />
+                    <group caption="Gantt" classpath="style.gantt.GanttDemo">
+                        <feature caption="Mouse dragging" classpath="tool.GanttMouseDragDemo" issues="axis manipulation fails"/>
+                    </group>
+                    <group caption="Shape" classpath="style.shape.ShapeDemo">
+                        <feature caption="Brush image" classpath="style.shape.BrushImageDemo"/>
+                        <feature caption="Vertical text align" classpath="style.shape.VertTextAlignDemo" issues="brush colors"/>
+                    </group>
+                </group>
+                <group caption="Financial">
+                    <group caption="Candle (OHLC)" classpath="style.candle.CandleDemo">
+                        <feature caption="Custom Candle colors" classpath="style.candle.CustomColorsDemo" />
+                        <feature caption="Open Close style" classpath="style.candle.OpenCloseDemo" />
+                    </group>
+                    <feature caption="Point and Figure" classpath="style.pointfigure.PointFigureDemo" issues="0"/>
+                    <group caption="Volume" classpath="style.volume.VolumeDemo">
+                        <feature caption="Volume Origin" classpath="style.volume.OriginDemo" />
+                    </group>
+                </group>
+                <group caption="Extended">
+                    <group caption="Surface" classpath="style.surface.SurfaceDemo">
+                        <feature caption="With holes" classpath="style.surface.HoleDemo"/>
+                        <feature caption="Sides" classpath="style.surface.SidesDemo" issues="drawing of sides"/>
+                        <feature caption="Smooth palette" classpath="style.surface.SmoothDemo" />
+                        <group caption="XYZ floating point" classpath="style.surface.floatingpoint.IrregularDemo">
+                            <feature caption="Another example" classpath="style.surface.floatingpoint.FloatDemo"/>
+                        </group>
+                        <feature caption="Wireframe and palette" classpath="style.surface.WirePaletteDemo"/>
+                        <feature caption="Strong palette colors" classpath="style.surface.PaletteDemo"/>
+                        <feature caption="Surface HideCells" classpath="style.surface.HideCellsDemo" />
+                    </group>
+                    <group caption="Contour" classpath="style.contour.ContourDemo">
+                        <feature caption="Custom Levels" classpath="style.contour.LevelsDemo"/>
+                        <feature caption="2D Drawing" classpath="style.contour.View3DDemo" issues="0"/>
+                        <feature caption="Palette and Color range" classpath="style.contour.PaletteDemo" issues="0"/>
+                        <feature caption="Smooth segments" classpath="style.contour.SmoothSegmentDemo" issues="contour"/>
+                    </group>
+                    <group caption="Polar" classpath="style.polar.PolarDemo" issues="clicked algorithm">
+                        <feature caption="Polar and Radar Transparency" classpath="style.polar.TransparencyDemo" visible="0" issues="transparency with brush"/>
+                        <feature caption="Clockwise labels" classpath="style.polar.ClockWiseDemo"/>
+                        <feature caption="Circle labels Inside" classpath="style.polar.LabelsInsideDemo"/>
+                        <feature caption="Gradient" classpath="style.polar.GradientDemo" issues="0"/>                        
+                        <feature caption="Smooth Polar" classpath="style.polar.SmoothDemo" issues="0"/>
+                        <feature caption="Zones" classpath="style.polar.ZonesDemo" issues="drawing of zones"/>
+                        <feature caption="Polar Null points" classpath="style.polar.PolarNullsDemo"/>
+                    </group>
+                    <feature caption="Custom Polar Null points" classpath="style.polar.CustomPolarTreatNullsDemo"/>
+                    <feature caption="Radar" classpath="style.radar.RadarDemo"/>
+                    <feature caption="Donut" classpath="style.donut.DonutDemo" />
+                    <feature caption="Smith" classpath="style.smith.SmithDemo" visible="0" issues="0"/>
+                    <feature caption="Pyramid" classpath="style.pyramid.PyramidDemo" />
+                    <group caption="Tri. Surface" classpath="style.trisurface.TriSurfaceDemo" visible="0" issues="0">
+                        <feature caption="Tri. Surface Hiding" classpath="style.trisurface.HidingDemo" issues="0"/>
+                    </group>
+                    <feature caption="Vector 3D" classpath="style.vector.Vector3DDemo" />
+                    <feature caption="Tower 3D" classpath="style.tower.Tower3DDemo" issues="0" />
+                    <group caption="Point 3D" classpath="style.points3d.Points3DDemo">
+                        <feature caption="Pointer style event" classpath="style.points3d.StyleEventDemo" visible="0" />
+                        <feature caption="Point 3D base lines" classpath="style.points3d.BaselineDemo"/>
+                        <feature caption="Point 3D Nulls" classpath="style.points3d.Points3DTreatNullsDemo"/>
+                    </group>
+                    <feature caption="Bezier" classpath="style.bezier.BezierDemo" />
+                    <group caption="Map GIS" classpath="style.map.MapDemo">
+                        <feature caption="Map Transparency" classpath="style.map.MapTransparencyDemo"/>
+                    </group>                    
+                    <feature caption="3D Series and Range as Palette" classpath="style.colorgrid.RangePaletteDemo" />
+                    <feature caption="Depth 3D" classpath="style.DepthDemo" />
+                    <feature caption="XYZ Gridding" classpath="style.XYZGriddingDemo" issues="" todo="surface draw" />
+                    <feature caption="World" classpath="style.world.WorldDemo"/>
+                </group>
+                 <group caption="Gauges">
+                <group caption="Circular Gauge">
+                    <feature caption="Circular Gauge" classpath="style.circulargauge.CircularGaugeDemo"/>
+                    <feature caption="Embedded NGauge" classpath="style.circulargauge.CircularGauge_nGaugeDemo"/>
+                    <feature caption="Embedded LGauge" classpath="style.circulargauge.CircularGauge_lGaugeDemo"/>
+                </group>
+                <group caption="Linear Gauge">
+                    <feature caption="Linear Gauge" classpath="style.lineargauge.LinearGaugeDemo"/>
+                    <feature caption="Vertical Linear Gauge" classpath="style.verticallineargauge.VerticalLinearGaugeDemo"/>
+                </group>
+                <group caption="Numeric Gauge">
+                    <feature caption="Numeric Gauge" classpath="style.numericgauge.NumericGaugeDemo"/>
+                </group>
+            </group>
+                <group caption="Statistical">
+                    <feature caption="Waterfall" classpath="style.waterfall.WaterfallDemo"/>
+                    <group caption="Color Grid" classpath="style.colorgrid.ColorGridDemo">
+                        <feature caption="Mouse hits" classpath="style.colorgrid.ClickedDemo" issues="series.clicked not implemented"/>
+                        <feature caption="Transparent zones" classpath="style.colorgrid.TransparentDemo" visible="0" issues="0"/>
+                        <feature caption="ColorGrid Marks" classpath="style.colorgrid.MarksDemo" issues="exception in serieseditor"/>
+                        <feature caption="ColorGrid Bitmap" classpath="style.colorgrid.BitmapDemo" visible="0" issues="0"/>
+                    </group>
+                    <group caption="Histogram" classpath="style.histogram.HistogramDemo">
+                        <feature caption="Histogram Transparency" classpath="style.histogram.TransparencyDemo" issues="Smalldot grid; brush transparency"/>
+                    </group>
+                    <feature caption="Error Bar" classpath="style.errorbar.NegativeDemo"/>
+                    <feature caption="Error" classpath="style.error.ErrorDemo"/>
+                    <feature caption="HighLow" classpath="style.highlow.HighLowDemo"/>
+                    <group caption="Box-Plot" classpath="style.box.BoxDemo">
+                        <feature caption="Custom Values" classpath="style.box.CustomValuesDemo"/>
+                    </group>
+                    <feature caption="Funnel (Pipeline)" classpath="style.funnel.FunnelDemo" issues="drawing of yellow part after clicked"/>
+                    <feature caption="ErrorPoint" classpath="style.errorpoint.ErrorPointDemo"/>
+                    <feature caption="ErrorPoint3D" classpath="style.errorpoint3d.ErrorPoint3DDemo"/>
+                </group>
+                <group caption="Other">
+                    <group caption="Wind-Rose" classpath="style.windrose.WindRoseDemo">
+                        <feature caption="Angle increment" classpath="style.windrose.AngleIncrementDemo" />
+                    </group>
+                    <group caption="Clock">
+                        <feature caption="Edit Clock" classpath="style.clock.EditDemo" />
+                    </group>
+                    <feature caption="Bar 3D" classpath="style.bar.Bar3DDemo" />
+                    <feature caption="Bar 3D Depth" classpath="style.bar.DepthDemo" />
+                    <group caption="Line Point" classpath="style.pointer.LinePointDemo" >
+                        <feature caption="Edit Line Point" classpath="style.pointer.EditLinePointDemo" issues="Editor"/>
+                    </group>
+                    <feature caption="Bar-Join" classpath="style.bar.BarJoinDemo" />
+                </group>
+            </group>
+            <group caption="Functions">
+                <group caption="Standard" issues="0">
+                    <feature caption="Add" classpath="function.AddDemo" />
+                    <feature caption="Subtract" classpath="function.SubtractDemo" />
+                    <feature caption="High" classpath="function.HighDemo" />
+                    <feature caption="Low" classpath="function.LowDemo" />
+                    <feature caption="Count" classpath="function.CountDemo" />
+                    <feature caption="Multiply" classpath="function.MultiplyDemo" />
+                    <feature caption="Divide" classpath="function.DivideDemo" />
+                    <group caption="Average" classpath="function.AverageDemo">
+                        <feature caption="Average and Nulls" classpath="function.AverageNullsDemo" />
+                    </group>
+                    <feature caption="Variance" classpath="function.VarianceDemo" />
+                    <feature caption="Perimeter" classpath="function.PerimeterDemo" issues="0"/>
+                </group>
+                <group caption="Extended">
+                    <feature caption="Cross Points" classpath="function.CrossPointsDemo" />
+                    <feature caption="Cumulative" classpath="function.CumulativeDemo" />
+                    <group caption="Curve fitting" classpath="function.CurveFittingDemo">
+                        <feature caption="Finding coefficients" classpath="function.CurveFittingCoefDemo"/>
+                        <feature caption="Fitting linearizable models" classpath="function.CurveFitting_Models"/>
+                        <feature caption="Dynamic" classpath="function.trend.DynamicTrendDemo" visible="0" issues="animation?"/>
+                    </group>
+                    <feature caption="Custom y=f(x)" classpath="function.CustomDemo" />
+                    <feature caption="DownSampling" classpath="function.DownSamplingDemo" />
+                    <feature caption="Exponential Trend" classpath="function.trend.ExponentialTrendDemo" />
+                    <feature caption="Exp. Average" classpath="function.ExpAverageDemo" />
+                    <feature caption="Performance" classpath="function.PerformanceDemo" />
+                    <feature caption="Root Mean Square" classpath="function.RootMeanSqrDemo" />
+                    <feature caption="Smoothing SpLine" classpath="function.SmoothingDemo" />
+                    <feature caption="Std. Deviation" classpath="function.StdDeviationDemo" />
+                    <feature caption="Trend" classpath="function.trend.TrendDemo" />
+                </group>
+                <group caption="Financial">
+                    <feature caption="ADX" classpath="function.ADXDemo" />
+                    <feature caption="Bollinger Bands" classpath="function.BollingerDemo"/>
+                    <feature caption="CCI (Commodity Channel Index)" classpath="function.CCIDemo" />
+                    <feature caption="CLV (Accum/Distrib)" classpath="function.CLVDemo" />
+                    <feature caption="Compression (OHLC)" classpath="function.CompressionOHLCDemo" issues="Does not compress DateTime" todo=""/>
+                    <feature caption="MACD" classpath="function.MACDDemo" />
+                    <group caption="Moving Average" classpath="function.MovAveDemo" issues="DateTime labels">
+                        <feature caption="Weighted Mov. Ave." classpath="function.MovAveWeightedDemo"/>
+                        <feature caption="Exponential MA" classpath="function.EMADemo" />
+                    </group>
+                    <feature caption="Momentum" classpath="function.momentum.MomentumDemo" />
+                    <feature caption="Momentum Div" classpath="function.momentum.DivisionDemo" />
+                    <feature caption="OBV (On Balance Volume)" classpath="function.OBVDemo" />
+                    <feature caption="PVO (Percentage Volume Oscillator)" classpath="function.PVODemo" />
+                    <feature caption="RSI" classpath="function.RSIDemo" />
+                    <feature caption="SAR" classpath="function.SARDemo" />
+                    <feature caption="Stochastic" classpath="function.StochasticDemo" />
+                </group>
+                <group caption="Quality Control">
+                    <feature caption="SPC Charts" classpath="function.QualityControlDemo" issues="0"/>
+                </group>
+            </group>
+            <group caption="Tools">
+                <feature caption="3D Transpose" classpath="tool.TransposeDemo" />
+                <group caption="Annotation" classpath="tool.annotation.AnnotationDemo" issues="0">
+                    <feature caption="Annotation Click" classpath="tool.annotation.AnnotationClickDemo" issues="0"/>
+                    <feature caption="Annotation Callout" classpath="tool.annotation.AnnotationCalloutDemo" issues="0"/>
+                </group>
+                <feature caption="Axis arrows" classpath="tool.AxisArrowDemo"/>
+                <feature caption="Axis breaks" classpath="tool.AxisBreakDemo"/>
+                <feature caption="Axis labels" classpath="tool.AxisLabelDemo" issues="0"/>
+                <group caption="Draw Line" classpath="tool.drawline.DrawLineDemo">
+                    <feature caption="DrawLine Tool" classpath="tool.drawline.DraggedDemo"/>
+                </group>
+                <group caption="Color Band" classpath="tool.colorband.ColorBandDemo" visible="0" issues="0">
+                    <feature caption="Transparency" classpath="tool.colorband.TransparencyDemo" issues="0"/>
+                </group>
+                <group caption="Color Line" classpath="tool.colorline.ColorLineDemo" visible="0" issues="0">
+                    <feature caption="ColorLine Drag repaint" classpath="tool.colorline.DragRepaintDemo" issues="0"/>
+                    <feature caption="ColorLine 3D" classpath="tool.colorline.draw3DDemo"/>
+                </group>
+                <feature caption="Drag Marks" classpath="tool.DragMarksDemo"/>
+                <feature caption="Extra Legend tool" classpath="tool.ExtraLegendDemo"/>
+                <feature caption="Gantt Mouse dragging" classpath="tool.GanttMouseDragDemo" visible="0" issues="0"/>
+                <feature caption="Grid Bands" classpath="tool.GridBandsDemo" visible="0" issues="0"/>
+                <feature caption="Image" classpath="tool.ImageDemo" visible="0" issues="0"/>
+                <group caption="Mark Tips" classpath="tool.marktips.MarkTipDemo" issues="click">
+                    <feature caption="Marks Tip tool" classpath="tool.marktips.MouseDelayDemo"/>
+                </group>
+                <feature caption="Nearest Point" classpath="tool.NearestPointDemo" />
+                <feature caption="Pie focus" classpath="tool.PieFocusDemo" />
+                <group caption="Rotate" classpath="tool.rotate.RotateDemo" issues="0">
+                     <feature caption="Rotate outline" classpath="tool.rotate.RotateOutlineDemo" visible="0" issues="0"/>
+                </group>
+                <feature caption="ScrollPager" classpath="tool.ScrollPagerDemo"/>
+                <feature caption="Series Animation" classpath="tool.SeriesAnimationDemo"/>
+                <feature caption="Series Band" classpath="tool.SeriesBandDemo"/>
+            </group>
+            <group caption="Speed">
+                <feature caption="Fast Line Speed DrawAll" classpath="style.fastline.DrawAllDemo"/>
+            </group>
+            <group caption="Toolbar" classpath="toolbar.ToolbarDemo">
+                <feature caption="Commander" classpath="toolbar.CommanderDemo" />
+            </group>
+            <group caption="Axes" classpath="axes.AxesDemo">
+                <feature caption="Custom" classpath="axes.CustomAxesDemo" />
+                <feature caption="Axes behind series" classpath="axes.BehindAxesDemo" />
+                <feature caption="Opaque zones" classpath="axes.OpaqueZonesDemo" issues="clipping?"/>
+                <feature caption="Scrolling multiple" classpath="axes.MultiScrollDemo"/>
+                <feature caption="Draw EveryGrid" classpath="axes.GridDrawEveryDemo"/>
+                <feature caption="MaxMin rounded" classpath="axes.MaxMinRoundedDemo"/>
+                <group caption="Title">
+                    <feature caption="Visible property" classpath="axes.AxisTitleDemo"/>
+                </group>
+                <group caption="Labels">
+                    <feature caption="Labels Format" classpath="axes.LabelFormatDemo" />
+                    <feature caption="Milliseconds" classpath="axes.MillisecondsDemo" />
+                    <feature caption="Exponent superscript" classpath="axes.ExpLabelDemo"/>
+                    <feature caption="Alignment" classpath="axes.LabelAlignmentDemo" />
+                    <feature caption="Alternate" classpath="axes.LabelAlternateDemo" />
+                </group>
+                <feature caption="Minor grid" classpath="axes.MinorGridDemo" />
+                <feature caption="Multiple at Runtime" classpath="axes.MultiRuntimeDemo" />
+                <feature caption="Z (Depth) position" classpath="axes.ZPositionDemo" />
+                <feature caption="Depth top axis" classpath="axes.DepthTopDemo" />
+                <feature caption="Min and Max Offsets" classpath="axes.AxisOffsetDemo" />
+            </group>
+            <group caption="Miscellaneous">
+                <feature caption="Multi-Language" classpath="miscellaneous.LanguageDemo"/>
+                <group caption="Zoom and Scroll" classpath="zoom.ZoomScrollDemo" issues="0">
+                    <feature caption="Finding Min and Max" classpath="zoom.FindMinMaxDemo" />
+                    <feature caption="Pen and Brush" classpath="zoom.PenBrushDemo" issues="zoom brush dialog"/>
+                    <feature caption="Minimum Pixels" classpath="zoom.MinPixelsDemo" visible="0" issues="0"/>
+                    <feature caption="Direction" classpath="zoom.DirectionDemo" visible="0" issues="0"/>
+                    <feature caption="Zoom History" classpath="zoom.ZoomHistoryDemo"/>
+                </group>
+                <group caption="Legend">
+                    <feature caption="Scrolling Legend" classpath="legend.LegendScrollDemo" />
+                    <feature caption="Custom position" classpath="legend.CustomPositionDemo" />
+                    <feature caption="Text alignment and columns" classpath="legend.LegendWidthsDemo" />
+                    <feature caption="Checkboxes" classpath="legend.CheckBoxDemo"/>
+                    <feature caption="Brush image" classpath="legend.LegendImageDemo"/>
+                    <feature caption="Vertical spacing" classpath="legend.VertSpacingDemo" />
+                    <feature caption="Symbols" classpath="legend.SymbolsDemo" />
+                    <feature caption="Text styles" classpath="legend.TextStyleDemo" />
+                    <feature caption="Font series color" classpath="legend.FontColorDemo"/>
+                    <feature caption="Series property" classpath="legend.SeriesPropertyDemo" />
+                    <feature caption="Multiple legends" classpath="legend.MultipleDemo" />
+                    <feature caption="Drawing more text" classpath="legend.DrawTextDemo"/>
+                    <feature caption="Symbols Border" classpath="legend.SymbolsBorderDemo" />
+                    <feature caption="Legend title" classpath="legend.LegendTitleDemo"/>
+                    <feature caption="Text-Symbol gap" classpath="legend.LegendTextGapDemo"/>
+                </group>
+                <group caption="Series Marks">
+                    <feature caption="Border shadow" classpath="marks.BorderShadowDemo"/>
+                    <feature caption="Rotation angle" classpath="marks.RotationAngleDemo"/>
+                    <feature caption="Skip every" classpath="marks.SkipMarksDemo"/>
+                    <feature caption="XY Style" classpath="marks.XyStyleDemo" />
+                    <feature caption="Multi-line" classpath="marks.MultiLineDemo" issues="0"/>
+                    <feature caption="Persistent custom positions" classpath="" issues="" visible="0"/>
+                    <feature caption="Generic format" classpath="" issues="" visible="0"/>
+                    <feature caption="Marks callout" classpath="marks.CalloutDemo" />
+                    <feature caption="Custom per point" classpath="marks.PerPointDemo" issues="drawing"/>
+                </group>
+                <group caption="Titles and Footers">
+                    <feature caption="SubHeader and SubFooter" classpath="headfoot.SubHeaderFooterDemo" issues="0"/>
+                    <feature caption="Custom Position" classpath="headfoot.CustomPositionDemo" />
+                </group>
+                <group caption="Walls">
+                    <feature caption="Right Wall" classpath="walls.RightWallDemo"/>
+                    <group caption="Back Wall" classpath="walls.BackWallDemo">
+                        <feature caption="Gradient" classpath="walls.GradientDemo"/>
+                        <feature caption="Brush Image" classpath="walls.BrushImageDemo"/>
+                    </group>
+                    <feature caption="Wall Transparency" classpath="walls.TransparencyDemo" todo="init. draw outside panel?"/>
+                </group>
+                <group caption="Chart Panel">
+                    <feature caption="Margins in pixels" classpath="panel.MarginPixelsDemo"/>
+                    <feature caption="Shadow" classpath="panel.ShadowDemo"/>
+                    <feature caption="Round borders" classpath="panel.RoundBorderDemo"/>
+                </group>
+            </group>
+            <feature caption="Customers" classpath="Customers" />
+        </group>
+        <feature caption="Upgrading and Ordering" classpath="UpgradeAndOrdering" />
+    </all>
+    <feature caption="Upgrading and Ordering" classpath="UpgradeAndOrdering" />
+
+</features>

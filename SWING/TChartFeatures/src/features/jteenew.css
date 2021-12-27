@@ -1,0 +1,11 @@
+body {  font-family: "Tahoma";
+        font-size: 12pt;
+        color: #000000; 
+        margin-left: 5px;
+        margin-right: 5px;
+}
+
+code {  color: #000000; 
+        margin-left: 15px;
+        margin-right: 5px;
+}

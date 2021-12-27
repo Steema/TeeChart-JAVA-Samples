@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:baselineAligned="false">
+        <TextView android:text="                 " android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+    <Button android:gravity="center" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Save Changes" android:layout_gravity="center" android:id="@+id/buttonsave"></Button>
+    <LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout2" android:layout_height="fill_parent" android:orientation="horizontal">
+    </LinearLayout>
+<LinearLayout android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/linearLayoutChart">
+    <LinearLayout android:id="@+id/linearLayoutTchart" android:layout_height="wrap_content" android:layout_width="fill_parent"></LinearLayout>
+</LinearLayout>
+</LinearLayout>
+

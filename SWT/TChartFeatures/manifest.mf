@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 1.4 (Sun Microsystems Inc.)
+Class-Path: "C:\data\tcoherence\TeeChart Java\Version 3\Installers\temp\SWT\TeeChart.SWT.jar;C:\Program Files\Eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar;C:\Program Files\Eclipse\plugins\org.eclipse.draw2d_3.2.100.v20070529.jar;C:\Program Files\Eclipse\plugins\org.eclipse.jface_3.4.1.M20080827-2000.jar"
+Main-Class: TeeChartSWT

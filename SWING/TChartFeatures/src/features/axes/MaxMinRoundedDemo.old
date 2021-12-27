@@ -1,0 +1,191 @@
+/*
+ * LabelAlignmentDemo.java
+ *
+ * <p>Copyright: Copyright (c) 2005-2007 by Steema Software SL. All Rights
+ * Reserved.</p>
+ *
+ * <p>Company: Steema Software SL</p>
+ */
+
+package features.axes;
+
+import com.steema.teechart.axis.Axis;
+import com.steema.teechart.drawing.Color;
+import com.steema.teechart.styles.Line;
+import com.steema.teechart.styles.SeriesPointer;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+import javax.swing.Box;
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+import features.ChartSamplePanel;
+import com.steema.teechart.styles.*;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JLabel;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+/**
+ *
+ * @author stark
+ */
+//ActionListener,
+public class MaxMinRoundedDemo extends ChartSamplePanel
+        implements ChangeListener, ItemListener {
+
+    private Axis workingAxis;
+
+    /**
+     * Creates a new instance of LabelAlignmentDemo
+     */
+    public MaxMinRoundedDemo() {
+        super();
+        
+        chooseAxis = new JComboBox();
+        cbRoundMax = new JCheckBox();
+        cbRoundMin = new JCheckBox();      
+        
+        chooseAxis.addItemListener(this);
+        cbRoundMax.addItemListener(this);
+        cbRoundMin.addItemListener(this);
+        initGUI();
+        initChart();
+    }
+
+//    public void actionPerformed(ActionEvent e) {
+//        Object source = e.getSource();
+////        if (source == leftButton) 
+////           {
+////            chart1.getPage().next();
+////            chart1.setPage(chart1.getPage());
+////            chart1.getPage().setScaleLastPage(true);
+////          } 
+////        else if (source == rightButton)
+////           {
+////            chart1.getPage().previous();
+////            chart1.setPage(chart1.getPage());
+////            chart1.getPage().setScaleLastPage(true);
+////           }
+//       // else 
+//          if (chooseAxis == source)
+//        {         
+//            if (0 == chooseAxis.getSelectedIndex())
+//            {
+//                workingAxis = chart1.getAxes().getBottom();
+//            }
+//            else
+//            {
+//                workingAxis = chart1.getAxes().getLeft();
+//            }
+//        }
+//   //     finishingTheRest();
+//    }
+
+  //  @Override
+    protected void initChart() {
+        super.initChart();
+        chart1.getAspect().setView3D(false);
+        /* Set axes alternate labels */
+        for (int t=0; t < chart1.getAxes().getCount(); t++) {
+            chart1.getAxes().getAxis(t).getLabels().setAlternate(true);
+        }
+    }
+
+  //  @Override
+    protected void initComponents() {
+        super.initComponents();
+
+        Line series = new Line(chart1.getChart());
+        /* Sample values */
+        series.fillSampleValues();
+        series.setHorizontalAxis(HorizontalAxis.BOTH);
+        series.setVerticalAxis(VerticalAxis.BOTH);
+
+        series.getMarks().setVisible(false);
+
+        SeriesPointer pointer= series.getPointer();
+        pointer.getGradient().setStartColor(Color.YELLOW);
+        pointer.getGradient().setEndColor(Color.RED);
+        pointer.getGradient().setVisible(true);
+        pointer.setInflateMargins(true);
+        pointer.setVisible(true);
+
+        
+        chooseAxis = new JComboBox();
+        settingUpJComboBox();
+      //  ButtonGroup group = new ButtonGroup();
+        text1 = new JLabel("Axis");
+      
+    //    finishingTheRest();
+    }
+
+   // @Override
+    protected void initGUI() {
+        super.initGUI();
+        
+        JPanel groupPane = new JPanel();
+        {
+//            groupPane.setBorder(BorderFactory.createTitledBorder("Axis autoscale"));
+            groupPane.add(cbRoundMax);
+            groupPane.add(cbRoundMin);
+            groupPane.add(text1);
+            groupPane.add(chooseAxis);
+        }
+        JPanel tmpPane = getButtonPane();
+        {
+            tmpPane.add(groupPane);
+            tmpPane.add(Box.createHorizontalStrut(10));
+            tmpPane.add(text1);
+            tmpPane.add(chooseAxis);
+            tmpPane.add(cbRoundMax);
+            tmpPane.add(cbRoundMin);
+            tmpPane.add(Box.createHorizontalGlue());
+        }
+    }
+    
+    private Axis TheAxis()
+    {
+		if (chooseAxis.getSelectedIndex() == 0)
+		{
+			workingAxis =  chart1.getAxes().getLeft();
+		}
+		else
+		{
+            workingAxis = chart1.getAxes().getBottom();
+		}
+        return workingAxis;
+	}
+    
+
+    private void settingUpJComboBox()
+    {
+      chooseAxis.setVisible(true);
+      chooseAxis.addItem("Left");
+      chooseAxis.addItem("Bottom");    
+    }
+    
+//    private JButton leftButton, rightButton;
+    private JComboBox chooseAxis;
+    private JCheckBox cbRoundMax, cbRoundMin;
+    private JLabel text1;
+
+  public void itemStateChanged(ItemEvent e) 
+  {
+    Object source = e.getItemSelectable();
+    boolean  isSelected = (e.getStateChange() == ItemEvent.SELECTED);
+    if (source == cbRoundMax)
+    {
+      TheAxis().setMaxRounded(isSelected);
+    } 
+    else if (source == cbRoundMin)
+    {
+      TheAxis().setMinRounded(isSelected);
+    }
+  }
+
+  public void stateChanged(ChangeEvent e) {
+    throw new UnsupportedOperationException("Not supported yet.");
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:layout_gravity="center" android:layout_weight="1" android:baselineAligned="false" android:layout_width="fill_parent" android:orientation="horizontal" android:id="@+id/linearLayout1" android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content" android:text="                 " android:id="@+id/textView1" android:layout_gravity="center" android:layout_width="wrap_content"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/linearLayout3" android:layout_height="wrap_content">
+        <Button android:text="Browse..." android:id="@+id/buttonBrowse" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+        <EditText android:layout_height="wrap_content" android:layout_gravity="center" android:layout_width="fill_parent" android:text="  " android:id="@+id/editText"></EditText>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:layout_weight="1" android:layout_width="wrap_content" android:orientation="horizontal" android:id="@+id/linearLayout2" android:layout_height="fill_parent">
+        <Button android:text="Generate histogram" android:id="@+id/buttonGenerate" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+    </LinearLayout>
+    <LinearLayout android:layout_weight="1" android:layout_width="fill_parent" android:orientation="vertical" android:id="@+id/linearLayoutChart" android:layout_height="fill_parent">
+        <TextView android:layout_height="wrap_content" android:text="Image Preview" android:id="@+id/textView2" android:layout_width="wrap_content"></TextView>
+        <ImageView android:layout_gravity="center" android:id="@+id/imageView1" android:src="@drawable/internet" android:layout_width="fill_parent" android:layout_height="fill_parent"></ImageView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout4" android:layout_width="fill_parent" android:orientation="vertical">
+        <TextView android:text=" " android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/textRescaled"></TextView>
+    </LinearLayout>
+    
+</LinearLayout>
+

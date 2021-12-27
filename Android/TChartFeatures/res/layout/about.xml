@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="true" android:layout_height="fill_parent" android:layout_width="fill_parent" android:orientation="vertical">
+    <ImageView android:layout_height="70px" android:layout_width="150px" android:src="@drawable/abouttext" android:id="@+id/icon" android:layout_gravity="center"></ImageView>
+    <LinearLayout android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal" android:baselineAligned="false" android:gravity="center">
+        <ImageView android:src="@drawable/facebook" android:id="@+id/facebook" android:visibility="visible" android:gravity="center" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"></ImageView>
+        <ImageView android:src="@drawable/twitter" android:visibility="visible" android:id="@+id/twitter" android:gravity="center" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"></ImageView>
+    </LinearLayout>
+    <EditText android:editable="false" android:layout_height="fill_parent" android:layout_width="fill_parent" android:text="@string/about" android:id="@+id/editText1" android:scrollbarAlwaysDrawVerticalTrack="true"></EditText>
+</LinearLayout>

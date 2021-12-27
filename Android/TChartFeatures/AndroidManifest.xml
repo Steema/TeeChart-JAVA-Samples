@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.steema.teechart.android"
+    android:versionCode="10"
+    android:versionName="1.10" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock" >
+        <activity
+            android:name="TeeChart"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="About" />
+        <activity android:name="ListItem" />
+        <activity android:name="ChartView" />
+        <activity android:name="ListItemPhone" />
+        <activity android:name="VolumeStatistics" />
+        <activity android:name="BatteryStatistics" />
+        <activity android:name="WIFIStatistics" />
+        <activity
+            android:name="ImageStatistics"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="HistogramView" />
+    </application>
+
+</manifest>

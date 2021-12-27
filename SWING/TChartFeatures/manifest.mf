@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: TeeChartDemo
+Created-By: 1.4 (Sun Microsystems Inc.)
+Class-Path: ../../../TeeChart.Swing.jar classes/sqlserver/msbase.jar classes/sqlserver/mssqlserver.jar classes/sqlserver/msutil.jar

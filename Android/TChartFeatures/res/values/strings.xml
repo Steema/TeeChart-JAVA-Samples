@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Welcome to Steema\'s TeeChart Android Preview</string>
+    <string name="app_name">TeeChart for Android Preview</string>
+    <string name="about">Steema Software has been providing developers with tools for charting since 1995. The TeeChart for Android Library forms part of ongoing development to make available for Android application development all of the charting features that form part of the TeeChart Libraries. This preview application shows a few of the possibilities available to developers.</string>
+    <string name="pie_description"> The Pie style shows values displayed as slices of
+		a cheese or pie. Options include 2D and 3D, moving the slices, marks,
+		patterns, ellipse shape, border, shadow, grouping of small values,
+		partial pies, multiple pies, etc.</string>
+    <string name="line_description"> Line series displays points drawing one line from
+		each point to the next.
+		Options include 2D and 3D, "stairs" mode, null
+		points, pointers, border,
+		filling pattern, height 3D, stacking,
+		overlaping, clicking, dark 3D
+		and marks.</string>
+    <string name="bar_description"> The Bar style allows single or multiple bars, with
+		different layouts ( 3D, side-to-side, side-all, stacked, stacked 100%
+		).
+		Options include 2D and 3D, color-each-bar, bar style, patterns, dark
+		3D,
+		bottom origin, auto-mark positions, stacking groups, marks, border,
+		etc.</string>
+    <string name="area_description">The Area style allows single or multiple areas,
+		with different layouts ( 3D, overlap, stacked, stacked 100% ). Options
+		include 2D and 3D, color-each-area, patterns, gradients, dark 3D,
+		bottom origin, stairs mode, marks, border, transparency, etc.</string>
+    <string name="points_description">Point series displays XY values using a Pointer.
+		Each pointer has many different methods, like color, 3D, shadow,
+		style, marks, pattern, border, width, height, etc.</string>
+    <string name="candle_description">Candle (OHLC) series displays financial data in
+		several ways (Candle, Bar and Stick). Candle colors are determined by
+		the Open and Close values. Weekend data can be removed using a
+		sequential index for the X value.
+		Configuration options include border, draw 3D, open and close colors, candle style,
+		marks, etc. Candle charts are the base for financial functions (RSI,
+		etc).</string>
+    <string name="surface_description">urface displays a grid of XYZ floating point
+		values. Options include palette, border, pattern, null values,
+		wire-frame, dots, surface sides, marks, gradients, inverted axes, etc.</string>
+    <string name="tower_description">Tower series displays bars in 3D grid mode. Several methods configure the aspect and size of each bar.</string>
+    <string name="contour_description">The Contour Series displays lines corresponding to "Level" values on 3D XYZ data. The number of levels, the level intervals, the levels positions, colors and Legend can be fully customized. It can also be viewed in 2D, or rotated in 3D mode.</string>
+    <string name="colorgrid_description">ColorGrid series is a 2D surface. Each "cell" has a value and an optional color. The add method is used to fill the color grid. An optional "grid" over cells is displayed using the Pen method.</string>
+    <string name="polar_description">Polar and radar series now support null points (controlled via the TreatNulls property). Uncheck the "Hide null points" checkbox to see the difference between "normal" and "null" style(s).</string>
+    <string name="smith_description">Smith Series is a chart style to draw Smith charts. Each point is defined with Resistance and Reactance values. It inherits most common methods from Polar and Circled ancestor series.</string>
+    <string name="fastline_description">The Fast-Line chart style is, at it\'s name implies, the fastest way to plot many points. It simply draws a thin line connecting all points. Some optimizations (like not drawing repeated values) are performed. It can be used in real-time applications to plot new added points.</string>
+    <string name="radar_description">Polar and radar series now support null points (controlled via the TreatNulls property). Uncheck the "Hide null points" checkbox to see the difference between "normal" and "null" style(s).</string>
+    <string name="isosurface_description">Surface displays a grid of XYZ floating point
+		values. Options include palette, border, pattern, null values,
+		wire-frame, dots, surface sides, marks, gradients, inverted axes, etc.</string>
+    <string name="bubble_description">The Area style allows single or multiple areas with different layouts ( 3D, overlap, stacked, stacked 100% ).
+Options include 2D and 3D, color-each-area, patterns, gradients, dark 3D, bottom origin, stairs mode, marks, border, transparency, etc.</string>
+    <string name="circulargauge_description">CircularGauge series may be used to dial display data. </string>
+    <string name="lineargauge_description">LinearGauge series may be used to display data with high frequency changes.</string>
+    <string name="map_description">Map series now has a new transparency property.</string>
+    <string name="highlow_description">High-Low series draws (and optionally fills) two lines with High and Low values for each point.</string>
+
+    <string-array name="SeriesArray">
+        <item>Pie</item>
+        <item>Line</item>
+        <item>Bar</item>
+        <item>Area</item>
+        <item>Point</item>
+        <item>HorizBar</item>
+        <item>Candle</item>
+        <item>Surface</item>
+        <item>Tower</item>
+        <item>Contour</item>
+        <item>ColorGrid</item>
+        <item>Polar</item>
+        <item>Smith</item>
+        <item>Radar</item>
+        <item>Fast Line</item>
+        <item>ISOSurface</item>
+        <item>Bubble</item>
+        <item>CircularGauge</item>
+        <item>LinearGauge</item>
+        <item>Map</item>
+        <item>HighLow</item>
+    </string-array>
+    <string-array name="ThemesArray">
+        <item>Opera</item>
+        <item>Black is Back</item>
+        <item>TeeChart</item>
+        <item>Excel</item>
+        <item>Classic</item>
+        <item>XP</item>
+        <item>Web</item>
+        <item>Business</item>
+        <item>Blues</item>
+        <item>GrayScale</item>
+    </string-array>
+    <string-array name="toolsArray">
+        <item>Annotation Click</item>
+        <item>Axis Arrow</item>
+        <item>Drag Marks</item>
+        <item>Drag Point</item>
+        <item>Draw Line</item>
+        <item>Extra Legend</item>
+        <item>Gantt Mouse Drag</item>
+        <item>Marks tip</item>
+        <item>Moving Cursor</item>
+        <item>Series Band</item>
+        <item>Scroll Pager</item>
+    </string-array>
+    <string-array name="PhoneStatisticsArray">
+        <item>Volume</item>
+        <item>Battery</item>
+        <item>WIFI</item>
+        <item>Images</item>
+    </string-array>
+
+</resources>
